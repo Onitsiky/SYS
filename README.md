@@ -1,4 +1,4 @@
-## _How to install an apache server on Linux_
+## _How to install an apache server on Linux ⚡_
 
 
 
