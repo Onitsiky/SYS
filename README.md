@@ -24,3 +24,26 @@
     ```sh
         sudo service apache2 start
     ```
+
+    > Pour vérifier que Apache est bien installé , tapez sur la ligne de commande : 
+    ```sh
+        etc/init.d/apache2
+    ```
+# Configuration Apache (Linux)
+
+* Tapez sur la ligne de commande : 
+    ```sh
+       nano /etc/apache2/apache2.conf
+    ```
+* Ensuite vous allez modifier le repertoire dans lequel vous voulez mettre votre configuration
+    ```sh
+       nano /etc/apache2/apache2.conf
+    ```
+* Et aplliquer la configuration sur : 
+    ```sh
+      /etc/apache2/site-enabled/000-default
+    ```
+* Et enfin redémarrer le service , apache :
+    ```sh
+      /etc/init.d/apache2 restart
+    ```
