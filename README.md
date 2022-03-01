@@ -1,3 +1,8 @@
+# Serveur HTTP Apache 2
+Un serveur HTTP permet à un site web de communiquer avec un navigateur en utilisant le protocole HTTP(S) et ses extensions (WebDAV, etc.). Apache est probablement le serveur HTTP le plus populaire. C'est donc lui qui met à disposition la plupart des sites Web du WWW.
+Il est produit par la Apache Software Foundation. C'est un logiciel libre fourni sous la licence spécifique Apache.
+
+On utilise généralement Apache en conjonction avec d'autres logiciels, permettant d'interpréter du code et d'accéder à des bases de données. Le cas le plus courant est celui d'un serveur LAMP (Linux Apache MySQL PHP).
 # Installation du serveur Apache 
 
 ## 1 - Sous Fedora/CentOS/Red Hat Enterprise Linux
@@ -12,7 +17,8 @@
     ```sh
         sudo systemctl démarrer httpd.service
     ```
-
+ * À la suite de cette installation votre serveur doit fonctionner et être accessible à l'adresse http://localhost
+ 
 ## 2 - Sous Ubuntu et/ou Debian
 
  * Installation des packages : 
@@ -24,3 +30,48 @@
     ```sh
         sudo service apache2 start
     ```
+	
+  * À la suite de cette installation votre serveur doit fonctionner et être accessible à l'adresse http://localhost
+ 
+ ## 3-Lancement
+ Apache 2 se lance automatiquement dès son installation, et se relance automatiquement à chaque démarrage. C'est l'idéal pour un serveur qui doit continuellement fournir du contenu en ligne, mais pour un serveur de test (on dit de développement) on peut éventuellement désirer un comportement différent.
+
+ ### Empêcher Apache de démarrer automatiquement
+Pour empêcher cela :
+
+        	sudo systemctl disable apache2
+    	
+ ### Réactiver le démarrage automatique
+Pour de nouveau relancer Apache automatiquement au démarrage de la machine, c'est simple :
+
+        	sudo systemctl enable apache2
+
+### Autres commandes utiles
+Pour arrêter apache2 : 
+
+            sudo systemctl stop apache2
+    
+Pour lancer apache2 :
+
+            sudo systemctl start apache2
+
+Pour relancer apache2 :
+
+            sudo systemctl restart apache2
+
+Pour recharger la configuration d'apache2 :
+
+            sudo systemctl reload apache2
+
+Pour voir la version d'Apache utilisée :
+
+            sudo apache2ctl -v
+Pour tester l'ensemble de la configuration d'Apache :
+
+            sudo apache2ctl -t
+Pour tester la configuration des hôtes virtuels :
+
+            sudo apache2ctl -t -D DUMP_VHOSTS
+Pour voir les modules d'Apache chargés :
+
+            sudo apache2ctl -M
