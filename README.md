@@ -28,3 +28,11 @@
 
     '''sudo apt-get install openssh-server
 
+
+##Pour lier le fichier html au localohost, il faut configurer le réseau local de la machine virtuel
+    '''Setting -> Réseau ->Port de redirection : changer l'ip en 127.0.0.1 et spécifier le port
+
+
+##Après avoir installer tous les packets, il faut connecter la machine virtuelle 
+    '''ssh [nom d'utilisateur]@[ip machine virtuel]
+
