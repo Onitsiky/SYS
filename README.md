@@ -24,3 +24,7 @@
     ```sh
         sudo service apache2 start
     ```
+##3- Installer un serveur ssh pour une communication à distance entre machine réelle et machine virtuel
+
+    '''sudo apt-get install openssh-server
+
