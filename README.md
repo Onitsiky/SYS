@@ -35,11 +35,12 @@
     ```sh
        nano /etc/apache2/apache2.conf
     ```
+Les fichiers de configuration de apache se trouve dans : apache2.conf
 * Ensuite vous allez modifier le repertoire dans lequel vous voulez mettre votre configuration
     ```sh
        nano /etc/apache2/apache2.conf
     ```
-* Et aplliquer la configuration sur : 
+* Et apliquer la configuration sur : 
     ```sh
       /etc/apache2/site-enabled/000-default
     ```
