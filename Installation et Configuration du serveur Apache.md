@@ -144,7 +144,7 @@ Les fichiers de configuration de apache se trouve dans : apache2.conf
     ```sh
       /etc/init.d/apache2 restart
     ```
-#Configuration de virtualhost sur VirtualBox
+# Configuration de virtualhost sur VirtualBox
 * Entrer dans configuration
 * Entrer dans Réseau
 * Puis changer le pont d'accès réseau en NAT
