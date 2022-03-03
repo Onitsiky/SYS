@@ -136,7 +136,7 @@ Les fichiers de configuration de apache se trouve dans : apache2.conf
 * Et apliquer la configuration sur :
 
     ```sh
-      /etc/apache2/site-enabled/000-default
+      /etc/apache2/sites-enabled/000-default
     ```
 
 * Et enfin redémarrer le service , apache :
@@ -148,5 +148,5 @@ Les fichiers de configuration de apache se trouve dans : apache2.conf
 * Entrer dans configuration
 * Entrer dans Réseau
 * Puis changer le pont d'accès réseau en NAT
-* Ajouter un port de redirection en utilisant l'ip 127.0.0.1 et le port 8080
+* Ajouter un port de redirection en utilisant l'ip 127.0.0.1 et le port 8080.
 
