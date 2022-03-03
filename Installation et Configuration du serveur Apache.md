@@ -136,7 +136,7 @@ Les fichiers de configuration de apache se trouve dans : apache2.conf
 * Et apliquer la configuration sur :
 
     ```sh
-      /etc/apache2/site-enabled/000-default
+      /etc/apache2/sites-enabled/000-default
     ```
 
 * Et enfin redémarrer le service , apache :
